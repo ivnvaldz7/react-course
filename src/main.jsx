@@ -7,6 +7,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <App title="Curso de React" subtitle='De 0 a experto' name='Fernando Herrera'/>
+    <CounterApp value={10} />
+    {/* <App title="Curso de React" subtitle='De 0 a experto' name='Fernando Herrera'/> */}
   </React.StrictMode>
 );
