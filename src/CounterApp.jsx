@@ -5,7 +5,7 @@ export const CounterApp = ({ value, title }) => {
   return (
     <>
       <h1>{title}</h1>
-      <p>{counter}</p>
+      <h2>{counter}</h2>
       <button onClick={() => setCounter(counter + 1)}> +1</button>
       <button onClick={() => setCounter(counter - 1)}> -1</button>
       <button onClick={() => setCounter(value)}> reset</button>
@@ -13,8 +13,8 @@ export const CounterApp = ({ value, title }) => {
   );
 };
 CounterApp.propTypes = {
-  value: PropTypes.number,
-  title: PropTypes.string.isRequired
+  value: PropTypes.number.isRequired,
+  title: PropTypes.string
 };
 CounterApp.defaultProps = {
   title: "Title of Counter"
